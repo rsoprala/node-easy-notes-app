@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "637ef05e-6891-4de0-bb5d-625b2a688e1c",
+		"name": "EasyNotesTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-all-notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-selected-note",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/notes/5ae8aef4bd51a79e8f6616df",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"5ae8aef4bd51a79e8f6616df"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-git-user-info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/gitusers/nsoprala",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gitusers",
+						"nsoprala"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-note",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"third note\", \"content\": \"My third note\"}"
+				},
+				"url": {
+					"raw": "localhost:3000/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-note",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"second note\", \"content\": \"My second note updated\"}"
+				},
+				"url": {
+					"raw": "localhost:3000/notes/5ae8af53bd51a79e8f6616e0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"5ae8af53bd51a79e8f6616e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-note",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"second note\", \"content\": \"My second note updated\"}"
+				},
+				"url": {
+					"raw": "localhost:3000/notes/5ae8af8cbd51a79e8f6616e1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"5ae8af8cbd51a79e8f6616e1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
